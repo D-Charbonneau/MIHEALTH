@@ -1,0 +1,110 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: url(../Images/dot-grid.png) repeat scroll;
+  background-size: 652px;
+  margin: 0px 0px;
+  overflow-x: hidden;
+}
+body main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 50px 100px;
+}
+body main .textColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+}
+body main .textColumn h1 {
+  margin: 0px;
+  font-size: 75px;
+  white-space: pre-line;
+  display: inline;
+  line-height: 75px;
+}
+body main .textColumn div {
+  display: flex;
+}
+body main .textColumn div h3 {
+  display: inline;
+}
+body main .textColumn div .arrow {
+  font-size: 50px;
+  padding-top: 0px;
+  position: relative;
+  margin: -5px 5px;
+}
+body main .images {
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+body main .images div .image {
+  width: 340px;
+  overflow: hidden;
+  height: 500px;
+  margin: 0px 25px;
+}
+body main .images div .image img {
+  height: 700px;
+}
+body main .images div .texts {
+  position: relative;
+  z-index: 50;
+  top: -120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 25px;
+}
+body main .images div .texts .backbox {
+  height: 60px;
+  background-color: white;
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body main .images div .texts .backbox b {
+  margin-right: 10px;
+}
+body main .images div .texts .backbox:nth-child(2) {
+  background-color: #8DC728;
+  width: 150px;
+}
+body nav {
+  background-color: #EDEDED;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body nav div {
+  padding: 20px;
+  margin: 0px 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body nav div h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 45px;
+  margin: 0px;
+  display: inline;
+}
+body nav div h1 .MI {
+  color: #CE2020;
+}
+body nav div h1 .HEALTH {
+  color: #8DC728;
+}
+body nav div h2 a {
+  margin: 0px 35px;
+  text-decoration: none;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

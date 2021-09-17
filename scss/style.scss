@@ -1,0 +1,142 @@
+$red: #CE2020;
+$green: #8DC728;
+
+$navGrey: #EDEDED;
+
+$mainFont: "Noto Sans", sans-serif;
+$logoFont: 'Rubik', sans-serif;
+
+body
+{
+    font-family: $mainFont;
+    background: url(../Images/dot-grid.png) repeat scroll;
+    background-size: 652px;
+    margin: 0px 0px;
+    overflow-x: hidden;
+    main
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin: 50px 100px;
+        .textColumn
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 20%;
+           h1 
+            {
+                margin: 0px;
+                font-size: 75px;
+                white-space: pre-line;
+                display: inline;
+                line-height: 75px;
+            }
+            div
+            {
+                display: flex;
+                h3
+                {
+                    display: inline;
+                }
+                .arrow
+                {
+                    font-size: 50px;
+                    padding-top: 0px;
+                    position: relative;
+                    margin: -5px 5px;
+                }
+            }
+        }
+        .images
+        {
+            margin-left: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100vw;
+            div
+            {
+                .image
+                {
+                    width: 340px;
+                    overflow: hidden;
+                    height: 500px;
+                    margin: 0px 25px;
+                    img
+                    {
+                        height: 700px;
+                        
+                    }
+                }
+                .texts
+                {
+                    position: relative;
+                    z-index: 50;
+                    top: -120px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    margin-right: 25px;
+                    .backbox
+                    {
+                        height: 60px;
+                        background-color: white;
+                        width: 110px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        b
+                        {
+                            margin-right: 10px;
+                        }
+                    }
+                    .backbox:nth-child(2)
+                    {
+                        background-color: $green;
+                        width: 150px;
+                    }
+                }
+            }
+        }
+    }
+
+    nav
+    {
+        background-color: $navGrey;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        div
+        {
+            padding: 20px;
+            margin: 0px 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h1
+            {
+                font-family: $logoFont;
+                font-size: 45px;
+                margin: 0px;
+                display: inline;
+                .MI
+                {
+                    color: $red;
+                }
+        
+                .HEALTH
+                {
+                    color: $green;
+                }
+            }
+            h2 a
+            {
+                margin: 0px 35px;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
